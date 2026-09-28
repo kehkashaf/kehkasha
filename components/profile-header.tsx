@@ -11,6 +11,7 @@ export function ProfileHeader() {
         <h1 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
           Kehkasha <span className="text-primary">Dumasia</span>
         </h1>
+        <p className="text-base font-medium text-foreground">Now on GitHub</p>
         <div className="h-0.5 w-12 rounded-full bg-highlight" aria-hidden="true" />
         <p className="text-pretty text-lg leading-relaxed text-foreground">
           {"I'm a research scholar at IIT Kharagpur who builds things for the web and a data analyst."}
