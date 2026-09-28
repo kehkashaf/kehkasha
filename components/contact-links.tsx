@@ -63,9 +63,7 @@ export function ContactLinks() {
               </span>
               <span className="flex min-w-0 flex-1 flex-col">
                 <span className="text-xs text-foreground">{label}</span>
-                <span
-                  className={`break-all text-sm font-semibold ${label === 'Email' ? 'text-accent' : 'text-primary'}`}
-                >
+                <span className="break-all text-sm font-semibold text-primary">
                   {value}
                 </span>
               </span>
