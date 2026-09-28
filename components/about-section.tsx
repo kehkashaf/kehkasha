@@ -3,7 +3,7 @@ export function AboutSection() {
     <section aria-labelledby="about-heading" className="flex flex-col gap-3 border-t pt-8">
       <h2
         id="about-heading"
-        className="text-xs font-semibold uppercase tracking-widest text-accent-foreground"
+        className="text-xs font-semibold uppercase tracking-widest text-accent"
       >
         A little more
       </h2>
@@ -13,7 +13,7 @@ export function AboutSection() {
           href="https://kehkashaf.github.io"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-medium text-accent-foreground underline decoration-primary/40 underline-offset-4 transition-colors hover:decoration-primary"
+          className="font-medium text-primary underline decoration-primary/40 underline-offset-4 transition-colors hover:decoration-primary"
         >
           kehkashaf.github.io
         </a>
@@ -22,7 +22,7 @@ export function AboutSection() {
           href="https://github.com/kehkashaf"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-medium text-accent-foreground underline decoration-primary/40 underline-offset-4 transition-colors hover:decoration-primary"
+          className="font-medium text-primary underline decoration-primary/40 underline-offset-4 transition-colors hover:decoration-primary"
         >
           GitHub
         </a>

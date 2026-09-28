@@ -37,7 +37,7 @@ export function ContactLinks() {
     <section aria-labelledby="contact-heading" className="flex flex-col gap-4 border-t pt-8">
       <h2
         id="contact-heading"
-        className="text-xs font-semibold uppercase tracking-widest text-accent-foreground"
+        className="text-xs font-semibold uppercase tracking-widest text-accent"
       >
         How to reach me
       </h2>
@@ -56,17 +56,21 @@ export function ContactLinks() {
             <a
               href={href}
               {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-              className="group flex items-center gap-4 px-4 py-3 transition-colors hover:bg-accent focus-visible:bg-accent focus-visible:outline-none"
+              className="group flex items-center gap-4 px-4 py-3 transition-colors hover:bg-primary/5 focus-visible:bg-primary/5 focus-visible:outline-none"
             >
-              <span className="flex size-9 shrink-0 items-center justify-center rounded-md bg-accent text-accent-foreground">
+              <span className="flex size-9 shrink-0 items-center justify-center rounded-md bg-accent/10 text-accent">
                 <Icon className="size-4" aria-hidden="true" />
               </span>
               <span className="flex min-w-0 flex-1 flex-col">
-                <span className="text-xs text-muted-foreground">{label}</span>
-                <span className="break-all text-sm font-medium">{value}</span>
+                <span className="text-xs text-foreground">{label}</span>
+                <span
+                  className={`break-all text-sm font-semibold ${label === 'Email' ? 'text-accent' : 'text-primary'}`}
+                >
+                  {value}
+                </span>
               </span>
               <ArrowUpRight
-                className="size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-accent-foreground"
+                className="size-4 shrink-0 text-accent transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                 aria-hidden="true"
               />
               {external && <span className="sr-only">(opens in a new tab)</span>}
